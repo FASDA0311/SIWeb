@@ -1,26 +1,28 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LayoutComponent } from './components/layout/layout.component';
+import { LoginComponent } from './components/login/login.component';
+import { UsuariosComponent } from './components/Mantenimientos/usuarios/usuarios.component';
 
 const routes: Routes = [
-
-  {
-    path: '',
-    redirectTo: '',
-    pathMatch: 'full',
-},
-{
-    path : '',
-    children: [
-        {
-            path: '',
-            loadChildren: () => import('./components/public/public.module').then(m => m.PublicModule),
-        },
-        {
-            path: '',
-            loadChildren: () => import('./components/private/private.module').then(m => m.PrivateModule),
-        }
-    ]
-}
+    { path: '', pathMatch: 'full', redirectTo: 'login' },
+    {
+        path : "login",
+        component : LoginComponent,
+    },
+    {
+        path : "MenuPrincipal",
+        component : LayoutComponent,
+        children : [
+            
+        ]
+        
+    },
+    {
+        path : "1",
+        component : UsuariosComponent,
+    },
+ 
 ];
 
 @NgModule({

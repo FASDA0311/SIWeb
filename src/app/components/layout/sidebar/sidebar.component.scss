@@ -1,0 +1,82 @@
+/* Menú */
+#menu {
+    padding-left: 0;
+    
+  }
+  /* Cuadro que contiene el menú */
+  /* Anula el estilo de fondo del cuadro que contiene el menú */
+  .col-auto.bg-dark {
+    background-color: #2685dd !important;
+  }
+  
+  
+  /* Elementos del menú */
+  .nav-item {
+    width: 100%;
+  }
+  
+  /* Cuadrado que cubre los elementos */
+  .nav-link {
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 10px 15px; /* Añadir un relleno para hacer clic en el área más grande */
+  }
+  
+  /* Iconos */
+  .nav-link i {
+    margin-right: 10px;
+  }
+  
+  /* Usuario */
+  .dropdown {
+    width: 100%;
+  }
+  
+  /* Imagen de usuario */
+  .dropdown img {
+    margin-right: 10px;
+  }
+  
+  /* Dropdown Toggle */
+  .dropdown-toggle::after {
+    display: none;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #959595;
+  }
+  
+  /* Navbar Brand */
+  .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  /* Navbar Toggle */
+  .navbar-toggler {
+    border: none;
+  }
+  
+  /* Navbar Toggle Icon */
+  .navbar-toggler-icon {
+    background-color: #fff;
+  }
+  
+  /* Navbar Collapse Show */
+  .navbar-collapse.show {
+    background-color: #c5c5c5;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column;
+    }
+    .nav-item {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
